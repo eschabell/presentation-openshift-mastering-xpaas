@@ -313,12 +313,23 @@
                         </ul>
                         <li>Use web admin console</li>
                     </ul>
-                    <div align="right">
-                        <img src="https://raw.githubusercontent.com/eschabell/erics-images/master/domain.png">
+                    <div align="center">
+                        <img src="images/domains.png">
                     </div>
                 </section>
 
-                <section data-background="https://raw.githubusercontent.com/eschabell/erics-images/master/webadmin.png" data-background-size="99%">
+                <section>
+                    <h3>Web Admin Console</h3>
+                    <div align="center">
+                        <img src="images/webadmin.png">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Your account</h3>
+                    <div align="center">
+                        <img src="images/settings.png">
+                    </div>
                 </section>
 
                 <section data-background="https://raw.githubusercontent.com/eschabell/erics-images/master/instantapps.png" data-background-size="99%">
@@ -444,6 +455,15 @@
 
                 <section>
                     <h2>PaaS: PHP</h2>
+                    <h4>Some options...</h4>
+                        <div align="center">
+                            <img src="images/php.png" />
+                        </div>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PaaS: PHP</h2>
                     <h4>Hosting a workshop</h4>
                     <ul>
                         <li><code>$ rhc app create bpmworkshop -t php-5.4 --from-code git://github.com/eschabell/openshift-bpmsuite-workshop.git</code></li>
@@ -451,7 +471,14 @@
                         <div align="right">
                             <a href="http://bpmworkshop-onthe.rhcloud.com" target="_blank"><img src="images/workshop.png"  height=50%" width="50%" /></a>
                         </div>
-                    </ul>
+                </section>
+
+                <section>
+                    <h2>PaaS: Ruby</h2>
+                    <h4>Some options...</h4>
+                    <div align="center">
+                        <img src="images/ruby.png" />
+                    </div>
                 </section>
 
 
@@ -459,30 +486,79 @@
                     <h2>PaaS: Ruby</h2>
                     <h4>Online Awestruct presentations</h4>
                     <ul>
-                        <li><code>$ rhc app create -t ruby-1.9 --from-code git://github.com/eschabell/openshift-presos-awstruct.git presos</code></li>
+                        <li><code>$ rhc app create presos -t ruby-1.9 --from-code git://github.com/eschabell/openshift-presos-awstruct.git</code></li>
                         <li><code>http://presos-$your_domain.rhcloud.com</code></li>
                         <div align="right">
                             <img src="images/presos.png" height="50%" width="50%">
                         </div>
                     </ul>
+                </section>
 
+                <section>
+                    <h2>PaaS: Ruby</h2>
+                    <h4>Rail development...</h4>
+                    <ul>
+                        <li>Quickstarts online offer easiest setup</li>
+                        <li>Or do it by hand with <a href="https://blog.openshift.com/how-to-host-ruby-on-rails-4-apps-on-openshift" target="_blank">OpenShift Rails example project</a></li>
+                        <div align="right">
+                            <img src="images/rubyrails.png" height="50%" width="50%">
+                        </div>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>PaaS: Java</h2>
+                    <h4>Some options...</h4>
+                    <div align="center">
+                        <img src="images/java.png" />
+                    </div>
                 </section>
 
                 <section>
                     <h2>PaaS: Java community</h2>
-                    <h4>TODO: JBoss jBPM migration project</h4>
+                    <h4>JBoss jBPM migration project</h4>
                     <ul>
-                        <li><code>$ rhc app create -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git jbpmmigration</code></li>
-                        <li><code>http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.5</code></li>
+                        <li><code>$ rhc app create jbpmmigration -t jbossas-7 --from-code git://github.com/eschabell/openshift-jbpmmigration.git</code></li>
+                        <li><code>http://jbpmmigration-$your_domain.rhcloud.com/jbpmmigration_upload-0.6</code></li>
                     </ul>
                     <div align="right">
                         <img src="images/jbpmmigration.png">
                     </div>
                 </section>
 
+                <section data-background-color="white">
+                    <h2>PaaS: Java community</h2>
+                    <h4>Now with WildFly...</h4>
+                    <ul>
+                        <li><code>$ rhc app create jbpmwildfly -t wildfly -n $new-domain</code></li>
+                        <li>Push jbpmmigration_upload-6.0.war to depoloyments directory</li>
+                        <ul>
+                            <li><code>$ cp jbpmmigration_upload-6.0.war jbpmwildfly/deployments</code></li>
+                            <li><code>$ git add jbpmwildfly/deployments</code></li>
+                            <li><code>$ git commit -m "Added web archive."; git push</code></li>
+                        </ul>
+                        <li><code>http://jbpmwildfly-$your_domain.rhcloud.com/jbpmmigration_upload-0.6</code></li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/wildfly.jpg" height="200px" width="200px" />
+                    </div>
+                </section>
+
+<!-- Mastering xPaaS -->
+
                 <section>
-                    <h2>PaaS: Java Enterprise</h2>
-                    <h4>TODO: JBoss EAP & Business Optimizer Demo</h4>
+                    <h2>Mastering xPaaS</h2>
+                    <ul>
+                        <li>aPaaS</li>
+                        <li>mPaaS</li>
+                        <li>iPaaS</li>
+                        <li>bpmPaaS</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>aPaaS: Java Enterprise</h2>
+                    <h4>JBoss EAP & Business Optimizer Demo</h4>
                     <ul>
                         <li><code>$ rhc app create optimizer -t jbosseap-6</code></li>
                         <li><code>$ cd optimizer</code></li>
@@ -497,7 +573,7 @@
                 </section>
 
                 <section>
-                    <h2>PaaS: Java Mobile</h2>
+                    <h2>mPaaS: Java Mobile</h2>
                     <h3>TODO: JBoss Aerogear + Devoxx Mobile Registration</h3>
                     <ul>
                         <li><code>$ rhc app create -t jbosseap-6 jaxlondon</code></li>
@@ -512,26 +588,50 @@
                     </div>
                 </section>
 
-
-                <!-- Mastering xPaaS -->
-
                 <section>
-                    <h2>Mastering xPaaS</h2>
+                    <h2>iPaaS: Java Integration</h2>
+                    <h3>TODO: JBoss Fuse</h3>
                     <ul>
-                        <li>aPaaS</li>
-                        <li>iPaaS</li>
-                        <li>bpmPaaS</li>
+                        <li>Featured xPaaS via the web console</li>
                     </ul>
+                    <div align="right">
+                        <img src="images/ipaas-fuse.png">
+                    </div>
                 </section>
 
+                <section>
+                    <h2>iPaaS: Data Integration</h2>
+                    <h3>JBoss DV</h3>
+                    <ul>
+                        <li>Featured xPaaS via web cosole</li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/ipaas-dv.png">
+                    </div>
+                </section>
 
+                <section>
+                    <h2>brmsPaaS: JBoss BRMS</h2>
+                    <h3>Rules and events</h3>
+                    <ul>
+                        <li>The <a href="https://github.com/eschabell/cartridge-bpmPaaS-coolstore-demo" target="_blank">Cool Store</a> example project</li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/brmsPaaS.png">
+                    </div>
+                </section>
 
-
-
-
-
-
-
+                <section>
+                    <h2>bpmPaaS: JBoss BPM Suite</h2>
+                    <h3>Rules, events and processes</h3>
+                    <ul>
+                        <li>Featured xPaaS via web cosole</li>
+                        <li>Many <a href="https://github.com/search?q=user%3Aeschabell+cartridge" target="_blank">example cartridges / projects...</a></li>
+                    </ul>
+                    <div align="right">
+                        <img src="images/bpmPaaS.png">
+                    </div>
+                </section>
 
                 <section data-background-color="white">
 					<h2>Loving Your Hammers?</h2>
@@ -539,9 +639,6 @@
                         <img src="images/loving.png">
                     </div>
 				</section>
-
-                <section data-background="images/buzz.png" data-background-size="99%">
-                </section>
 
                 <section>
                     <div align="center">
